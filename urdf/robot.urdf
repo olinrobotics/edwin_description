@@ -144,7 +144,7 @@
     <child
       link="link_2" />
     <axis
-      xyz="0 0 -1" />
+      xyz="0 0 1" />
   </joint>
   <link
     name="link_3">
@@ -250,7 +250,7 @@
     <child
       link="link_4" />
     <axis
-      xyz="0 0 1" />
+      xyz="0 0 -1" />
   </joint>
   <link
     name="link_5">
