@@ -81,7 +81,7 @@
     </collision>
   </link>
   <joint
-    name="joint_1"
+    name="waist"
     type="continuous">
     <origin
       xyz="0 0 0.0332679193608537"
@@ -134,7 +134,7 @@
     </collision>
   </link>
   <joint
-    name="joint_2"
+    name="shoulder"
     type="continuous">
     <origin
       xyz="0 0 0.32173"
@@ -187,7 +187,7 @@
     </collision>
   </link>
   <joint
-    name="joint_3"
+    name="elbow"
     type="continuous">
     <origin
       xyz="-0.375 0 0"
@@ -240,7 +240,7 @@
     </collision>
   </link>
   <joint
-    name="joint_4"
+    name="hand"
     type="continuous">
     <origin
       xyz="-0.375 0 0"
@@ -293,7 +293,7 @@
     </collision>
   </link>
   <joint
-    name="joint_5"
+    name="wrist"
     type="continuous">
     <origin
       xyz="0.042405 0 -0.0244"
@@ -308,7 +308,7 @@
 
   <transmission name="trans_1">
 	  <type>transmission_interface/SimpleTransmission</type>
-	  <joint name="joint_1">
+	  <joint name="waist">
 		  <hardwareInterface>PositionJointInterface</hardwareInterface>
 	  </joint>
 	  <actuator name="motor_1">
@@ -317,7 +317,7 @@
   </transmission>
   <transmission name="trans_2">
 	  <type>transmission_interface/SimpleTransmission</type>
-	  <joint name="joint_2">
+	  <joint name="shoulder">
 		  <hardwareInterface>PositionJointInterface</hardwareInterface>
 	  </joint>
 	  <actuator name="motor_2">
@@ -326,7 +326,7 @@
   </transmission>
   <transmission name="trans_3">
 	  <type>transmission_interface/SimpleTransmission</type>
-	  <joint name="joint_3">
+	  <joint name="elbow">
 		  <hardwareInterface>PositionJointInterface</hardwareInterface>
 	  </joint>
 	  <actuator name="motor_3">
@@ -335,7 +335,7 @@
   </transmission>
   <transmission name="trans_4">
 	  <type>transmission_interface/SimpleTransmission</type>
-	  <joint name="joint_4">
+	  <joint name="hand">
 		  <hardwareInterface>PositionJointInterface</hardwareInterface>
 	  </joint>
 	  <actuator name="motor_4">
@@ -344,7 +344,7 @@
   </transmission>
   <transmission name="trans_5">
 	  <type>transmission_interface/SimpleTransmission</type>
-	  <joint name="joint_5">
+	  <joint name="wrist">
 		  <hardwareInterface>PositionJointInterface</hardwareInterface>
 	  </joint>
 	  <actuator name="motor_5">
